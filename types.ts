@@ -35,6 +35,6 @@ export interface MarkdownLiveEditorProps {
   ariaLabel?: string;
   minHeight?: number | string;
   onFocus?: () => void;
-  /** Hide the built-in preview tab when the host renders its own preview/navigation. */
-  showPreviewTab?: boolean;
+  /** Reports an unexpected serializer failure so the host can keep an unsafe draft from being saved. */
+  onSerializationSafetyChange?: (safe: boolean) => void;
 }
